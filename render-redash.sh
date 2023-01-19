@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+echo hello
+
 export PYTHONUNBUFFERED=1
 
 export REDASH_HOST="$RENDER_EXTERNAL_HOSTNAME"
