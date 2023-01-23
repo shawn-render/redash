@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo hello
+echo hello world
 
 export PYTHONUNBUFFERED=1
 
