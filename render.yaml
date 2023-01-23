@@ -26,6 +26,13 @@ services:
       - fromGroup: redash-shared
       - fromGroup: redash-mail
 
+  - type: cron
+    name: redash-cron
+    env: ruby
+    schedule: "0 * * * *"
+    buildCommand: "true" # ensure it's a string
+    startCommand: date
+
   - type: worker
     name: redash-scheduler
     env: docker
